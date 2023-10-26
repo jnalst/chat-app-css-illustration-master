@@ -1,0 +1,36 @@
+.app-bg {
+  max-width: 100%;
+  min-height: 100vh;
+  margin: 0px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  display: grid;
+  place-items: center;
+  background-color: var(--lGrayViolet);
+}
+
+.app-bg::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 600px;
+  background: linear-gradient(180deg, #e942ff,#8838ff);
+  justify-self: start;
+  align-self: start;
+  left: -6rem;
+  border-radius: 0rem 0rem 30rem 30rem;
+  z-index: -1;
+}
+
+.app-bg::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 350px;
+  height: 600px;
+  background-color: #6e5d7e0a;
+ justify-self: end;
+ align-self: end;
+  border-radius: 30rem 0rem 0rem 0rem;
+  z-index: -1;
+}

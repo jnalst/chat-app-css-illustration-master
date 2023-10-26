@@ -1,0 +1,13 @@
+.attribution {
+  font-size: 16px;
+  text-align: center;
+  color: var(--w);
+  font-family: "Rubik";
+  padding-bottom: 1rem;
+  padding-top: 3rem;
+  color:var(--lMagenta);
+}
+
+.attribution a {
+  color: var(--lViolet);
+}

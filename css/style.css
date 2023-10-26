@@ -1,0 +1,11 @@
+/* Utilitario */
+@import "./global/global.css";
+
+/* Background */
+@import "./appbackground/appbg.css";
+
+/* main */
+@import "./appdesign/appdesign.css";
+
+/* Footer */
+@import "./footer/footerch.css";
