@@ -6,8 +6,8 @@
 }
 
 .app-template .appcell-bg {
-  width: 26rem;
-  height: 50rem;
+  width: 30rem;
+  height: 58rem;
   border-radius: 3rem 3rem;
   background-color: #ffffff;
   display: grid;
@@ -15,17 +15,223 @@
 }
 
 .app-template .appcell {
-  width: 24.5rem;
-  height: 48.5rem;
+  width: 28rem;
+  height: 56rem;
   border-radius: 3rem 3rem;
   background-color: var(--lGrayViolet);
+  position: relative;
+}
+
+.app-template .appcell::before{
+  content: "";
+  position: absolute;
+  width: 13rem;
+  height: 1.2rem;
+  background-color: var(--w);
+  left: 7rem;
+  top: -.1rem;
+  border-radius: 0rem 0rem 2rem 2rem ;
 }
 
 .appcell .profile {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 5.5rem 3fr;
   gap: 1rem;
   background: linear-gradient(-90deg, #e942ff,#8838ff);
-  border-radius: ;
+  border-radius: 3rem 3rem .5rem .5rem;
+  align-items: center;
+  padding-top: 2.2rem;
+  padding-bottom: 1.2rem;
 } 
+
+.appcell .profile .profile-img {
+  justify-self: end;
+  position: relative;
+}
+
+.appcell .profile .profile-img img{
+  width: 2.6rem;
+  border-radius: 100% 100%;
+  display: grid;
+  place-items: center;
+  border: .1rem solid #fff;
+  justify-self: end;
+  
+}
+
+.appcell .profile .profile-img::before{
+  content: "";
+  position: absolute;
+  background-image: url("/images/arrowiosback_111116.svg");
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  top: .4rem;
+  left: -2rem;
+}
+
+.appcell .profile .profile-text {
+  position: relative;
+} 
+
+.appcell .profile .profile-text h1 {
+  font-size: 1.4rem;
+  font-family: "Rubik";
+  color: var(--w);
+  font-weight: 500;
+
+}
+
+.appcell .profile .profile-text p {
+  font-size: 1rem;
+  font-family: "Rubik";
+  color: var(--w);
+}
+
+.appcell .profile .profile-text::before{
+  content: "";
+  position: absolute;
+  background-image: url("/images/ellipsis-vertical.svg");
+  background-repeat: no-repeat;
+  width: 2.5rem;
+  height: 2.5rem;
+  left: 15rem;
+}
+
+.appcell .chat1 {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.appcell .chat1 p {
+  padding-inline: 1rem;
+  padding-block: 1rem;
+  margin-left: 1rem;
+  background-color: #ede5f2;
+  font-family: "Rubik";
+  font-size: 1rem;
+  max-width: 22ch;
+  border-radius: 1rem;
+  color: var(--modeViolet);
+}
+
+.appcell .chat2 {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  justify-items: end;
+  margin-right: 1rem;
+}
+
+.appcell .chat2 .chat2-img {
+  display: flex;
+  gap: 1rem;
+}
+
+.appcell .chat2 .chat2-img img{
+  width: 4rem;
+  border-radius: 1rem 1rem;
+}
+
+
+.appcell .chat2 p {
+  padding-inline: 1rem;
+  padding-block: 1rem;
+  margin-left: 1rem;
+  background-color: #fff;
+  font-family: "Rubik";
+  font-size: 1rem;
+  max-width: 22ch;
+  border-radius: 1rem;
+  color: #000;
+}
+
+.appcell .chat3 {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.appcell .chat3 > p {
+  padding-inline: 1rem;
+  padding-block: 1rem;
+  margin-left: 1rem;
+  background-color: #ede5f2;
+  font-family: "Rubik";
+  font-size: 1rem;
+  max-width: 22ch;
+  border-radius: 1rem;
+  color: var(--modeViolet);
+}
+
+.appcell .chat3 .chat3-2 {
+  display: flex;
+  margin-left: 1rem;
+  background: linear-gradient(90deg, #e942ff,#8838ff);
+  padding-inline: 1rem;
+  padding-block: 1rem;
+  width: 15rem;
+  justify-content: space-between;
+  border-radius: 1rem;
+  align-items: center;
+  font-family: "Rubik";
+  color: var(--w);
+}
+
+.appcell .chat3 .chat3-3 {
+  display: flex;
+  margin-left: 1rem;
+  background: linear-gradient(90deg, #e942ff,#8838ff);
+  padding-inline: 1rem;
+  padding-block: 1rem;
+  width: 15rem;
+  justify-content: space-between;
+  border-radius: 1rem;
+  align-items: center;
+  font-family: "Rubik";
+  color: var(--w);
+}
+
+.appcell .chat3 .chat3-2 p {
+  font-size: 1rem;
+  padding-left: 2.5rem;
+  position: relative;
+}
+
+.appcell .chat3 .chat3-2 p::before{
+  content: "";
+  position: absolute;
+  width: 1.6rem;
+  height: 1.6rem;
+  top: -.28rem;
+  left: -.1rem;
+  border-radius: 100%;
+  border: #fff solid .1rem;
+} 
+
+.appcell .chat3 .chat3-3 p {
+  font-size: 1rem;
+  padding-left: 2.5rem;
+  position: relative;
+}
+
+.appcell .chat3 .chat3-3 p::before {
+  content: "";
+  position: absolute;
+  width: 1.6rem;
+  height: 1.6rem;
+  top: -.28rem;
+  left: -.1rem;
+  border-radius: 100%;
+  border: #fff solid .1rem;
+}
+
+.appcell .chat3 .chat3-2 span {
+  font-weight: 700;
+}
+
+.appcell .chat3 .chat3-3 span {
+  font-weight: 700;
+}
 
